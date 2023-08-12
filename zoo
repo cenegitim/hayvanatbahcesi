@@ -1,0 +1,38 @@
+Hayvanlar Grubu (GroupOfAnimals)
+
+Sınıf Değişkenleri:
+animals: Hayvan nesnelerini içeren bir liste
+Metotlar:
+getDosage()
+getFeedSchedule()
+Hayvan (Animal)
+
+Sınıf Değişkenleri:
+species: Tür adı
+weight: Ağırlık
+age: Yaş
+Metotlar:
+getDosage() (Alt sınıflarda implemente edilecek)
+getFeedSchedule() (Alt sınıflarda implemente edilecek)
+Atlar (Horses) (Hayvan Sınıfından Kalıtım Alır)
+
+Sınıf Değişkenleri:
+breed: Irk (at, zebra, eşek vb.)
+Metotlar:
+getDosage() (Atlar için uygun dozaj hesaplama)
+getFeedSchedule() (Atlar için uygun besleme zamanları hesaplama)
+Kedigiller (Felines) (Hayvan Sınıfından Kalıtım Alır)
+
+Sınıf Değişkenleri:
+type: Tür (kaplan, aslan vb.)
+Metotlar:
+getDosage() (Kedigiller için uygun dozaj hesaplama)
+getFeedSchedule() (Kedigiller için uygun besleme zamanları hesaplama)
+Kemirgenler (Rodents) (Hayvan Sınıfından Kalıtım Alır)
+
+Sınıf Değişkenleri:
+family: Familya (sıçan, kunduz vb.)
+Metotlar:
+getDosage() (Kemirgenler için uygun dozaj hesaplama)
+getFeedSchedule() (Kemirgenler için uygun besleme zamanları hesaplama)
+Bu sınıf diyagramı, Hayvan sınıfından kalıtım alan farklı hayvan gruplarını temsil eden alt sınıfları içerir. Her alt sınıf, kendi uygun dozaj hesaplama ve besleme zamanları hesaplama metotlarını uygular. Bu sayede polimorfizm ile aynı metot adı altında farklı davranışlar elde edilir.
